@@ -4,8 +4,8 @@ import searchHistoryReducer from './components/SearchHistory/searchHistoryReduce
 
 const rootReducer = combineReducers({
 // add reducers
-    search: searchBarReducer,
-    history: searchHistoryReducer
+  search: searchBarReducer,
+  history: searchHistoryReducer
 });
 
 export default rootReducer;

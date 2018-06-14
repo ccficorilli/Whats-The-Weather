@@ -1,78 +1,147 @@
 .container {
-    box-sizing: border-box;
-    width: 80%;
-    font-family: 'Raleway', sans-serif;
-  }
-  .header {
-    border: solid 1px transparent;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin: auto;
-    padding: 30px;
-    background-color: lightgray;
-    text-align: center;
-  }
-  .page-title {
-    margin: auto;
-    padding: 4px;
-  }
-  .search-bar {
-    width: 100%;
-    border-radius: 3px;
-    text-align: center;
-    margin: 20px auto;
-  }
-  .search-history,
-  .city-info {
-    width: 45%;
-    height: 300px;
-    border: solid 1px black;
-    padding: 5px;
-    margin: 10px auto;
-  }
-  .body-container {
-    display: inline-flex;
-    margin: auto;
-    width: 100%;
-  }
-  .tabs-holder {
-    display: inline-flex;
-    float: left;
-  }
-  .tabs {
-    font-size: 2.6vmin;
-    padding: 4px 8px;
-    color: whitesmoke;
-    background-color: #8c8ca8;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    cursor: pointer;
-  }
-  .tabs:active {
-    background-color: #7878a8;
-  }
-  .search {
-    display: inline-flex;
-    font-size: 2.6vmin;
-    width: 85%;
-    padding: 8px;
-    background-color: #d1d1d1;
-    border: none;
-    outline: none;
-    border-bottom-left-radius: 4px;
-  }
-  .submit {
-    font-size: 2.6vmin;
-    display: inline-flex;
-    width: 15%;
-    padding: 8px;
-    background-color: #d1d1d1;
-    cursor: pointer;
-    border: none;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-  }
-  .submit:active {
-    background-color: #a5a5a5;
-  }
-  
+  box-sizing: border-box;
+  min-width: 360px;
+  font-family: 'Raleway', sans-serif;
+}
+.header {
+  border: solid 1px transparent;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 10px auto;
+  padding: 30px;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+.page-title {
+  margin: auto;
+  padding: 4px;
+  font-size: 3vmax;
+}
+.tag-line {
+  font-size: 1.5vmax;
+}
+.history-container,
+.city-container {
+  width: 45%;
+  border: solid 1px #c8c8c8;
+  margin: 10px auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.body-container {
+  display: inline-flex;
+  margin: auto;
+  width: 100%;
+}
+/* ******************************SEARCH-BAR CSS********************************* */
+.search-bar {
+  width: 100%;
+  border-radius: 3px;
+  text-align: center;
+  margin: 20px auto;
+}
+.tabs-holder {
+  display: inline-flex;
+  float: left;
+}
+.tabs {
+  font-size: 1.2vmax;
+  padding: 4px 8px;
+  color: whitesmoke;
+  background-color: #1e87ff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  cursor: pointer;
+}
+.tabs:hover {
+  background-color: #7878a8;
+}
+.tabs:active {
+  background-color: #1e87ff;
+}
+.search {
+  display: inline-flex;
+  font-size: 1.2vmax;
+  width: 85%;
+  padding: 8px;
+  background-color: #ffffff;
+  outline: none;
+  border-bottom-left-radius: 4px;
+  border: 1px solid lightgray;
+}
+.submit {
+  display: inline-flex;
+  width: 15%;
+  padding: 8px;
+  background-color: #d1d1d1;
+  cursor: pointer;
+  border: 1px solid #d1d1d1;
+  text-align: right;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.button {
+  font-size: 1.2vmax;
+  margin: auto;
+}
+.submit:hover {
+  background-color: #a5a5a5;
+}
+.submit:active {
+  background-color: #d1d1d1;
+}
+/* **************************CityInfo CSS************************* */
+.label {
+  background-color: #caebff;
+  padding: 3px 6px;
+  color: #007ac0;
+}
+.info-block {
+  display: inline-block;
+  width: 8vmax;
+  min-width: 90px;
+  border: 1px black solid;
+  font-size: 1.1vmax;
+}
+.info-block div {
+  margin: 4px;
+}
+.info-row {
+  padding: 10px;
+}
+.info-display {
+  margin: auto;
+  padding: 6px;
+  text-align: center;
+  font-weight: 800;
+}
+.city-display {
+  padding: 4px;
+  text-align: center;
+}
+.city-row {
+  display: inline-flex;
+  text-align: center;
+}
+.weather-icon,
+.city-name {
+  margin: 4px 6px;
+}
+.lat-long {
+  font-size: 1.1vmax;
+}
+/* ***********************************HistoryCSS************************** */
+.history-display {
+  padding: 14px;
+}
+.history-row{
+  display: inline;
+  border-top: 1px rgb(0, 0, 0) solid;
+  border-bottom: 1px rgb(0, 0, 0) solid;
+}
+.date-searched {
+  text-align: right;
+}
+.prev-city {
+  text-align: left;
+}

@@ -9,7 +9,7 @@ export default class App extends React.Component {
       <div className='container'>
         <div className='header'>
           <h1 className='page-title'>Origin Weather Application</h1>
-          <p>Always know if you'll need an umbrella!</p>
+          <p className='tag-line'>Always know if you'll need an umbrella!</p>
         </div>
         <SearchBar />
         <div className="body-container">
