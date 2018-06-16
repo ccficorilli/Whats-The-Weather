@@ -1,6 +1,13 @@
 import React from 'react';
 
 class SearchHistory extends React.Component {
+  constructor(props){
+    this.state = {
+      date:'',
+      time:'',
+      city:''
+    }
+  }
 
   render() {
     return (
