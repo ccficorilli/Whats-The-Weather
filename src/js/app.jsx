@@ -1,7 +1,7 @@
 import React from 'react';
-import SearchBar from './components/SearchBar/SearchBar';
-import SearchHistory from './components/SearchHistory/SearchHistory';
-import CityInfo from './components/CityInfo/CityInfo';
+import Search from '../components/Search/SearchComponent';
+import History from '../components/History/History';
+import CityInfo from '../components/CityInfo/CityInfo';
 
 export default class App extends React.Component {
   render() {
@@ -11,10 +11,10 @@ export default class App extends React.Component {
           <h1 className='page-title'>Origin Weather Application</h1>
           <p className='tag-line'>Always know if you'll need an umbrella!</p>
         </div>
-        <SearchBar />
-        <div className="body-container">
+        <Search />
+        <div className='body-container'>
           <CityInfo />
-          <SearchHistory />
+          <History />
         </div>
       </div>
     );
