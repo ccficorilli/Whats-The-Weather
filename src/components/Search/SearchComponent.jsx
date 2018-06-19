@@ -4,9 +4,7 @@ import { updateSearchValue, updateWeatherData } from './searchActions';
 class SearchComponent extends React.Component {
   constructor(props){
     super(props)
-    // this.state = {
-    //   value: ''
-    // };
+
     this.inputChangeHandler = this.inputChangeHandler.bind(this);
     this.getWeatherOnClick = this.getWeatherOnClick.bind(this);
   };
@@ -14,9 +12,6 @@ class SearchComponent extends React.Component {
   inputChangeHandler(event) {
     const { dispatch } = this.props;
     const { value } = event.target;
-    // this.setState({
-    //       value
-    // }, () => console.log(this.state.value));
     dispatch(updateSearchValue(value));
   };
 
@@ -24,9 +19,6 @@ class SearchComponent extends React.Component {
     const { dispatch } = this.props;
     const { value } = event.target;
     const { color } = this.props;
-    // this.setState({
-    //   value: ''
-    // }, () => console.log(this.state.value));
     dispatch(updateWeatherData(value, color));
   };
 
@@ -79,16 +71,14 @@ class SearchComponent extends React.Component {
           <input
             className='search'
             type='text'
-            // value={this.state.value}
-            value={this.props.search}
+            value={this.props.searchedFor}
             onChange={this.inputChangeHandler}
             placeholder='Please enter a city here'
           />
             <button 
               type='submit'
               className='submit'
-              // value={this.state.value}
-              value={this.props.search}
+              value={this.props.searchedFor}
               onClick={this.getWeatherOnClick}
             >Search
             </button>
