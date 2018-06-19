@@ -37,10 +37,7 @@ export function updateWeatherData(city, color){
                         }
                     }
                 })
-            .catch(err => {
-                console.log(err);
-                alert('Sorry, that city is not valid');
-            })
+            .catch(err => console.log(err))
     }
 }
 
