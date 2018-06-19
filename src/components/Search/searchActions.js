@@ -25,7 +25,7 @@ export function updateWeatherData(city, color){
 // Make the axios call and create the history object
     return {
         type:'RETRIEVE_API_DATA',
-        payload:  axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ city }&unit=imperial&APPID=${ apiKey }`)
+        payload:  axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ city }&units=imperial&APPID=${ apiKey }`)
             .then(res => { 
                 return {
                     data: res.data,
