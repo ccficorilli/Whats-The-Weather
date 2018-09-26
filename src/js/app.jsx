@@ -8,7 +8,7 @@ export default class App extends React.Component {
     return (
       <div className='container'>
         <div className='header'>
-          <h1 className='page-title'>Origin Weather Application</h1>
+          <h1 className='page-title'>Simple Weather Application</h1>
           <p className='tag-line'>Always know if you'll need an umbrella!</p>
         </div>
         <Search />
